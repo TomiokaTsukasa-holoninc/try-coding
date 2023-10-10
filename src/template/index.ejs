@@ -1,12 +1,10 @@
 <% 
   const setting = include('./settings/_app');
 %>
-<%- include(setting.path.root + '/layouts/templates/_home.ejs', {
+<%- include(setting.path.root + '/layouts/_home.ejs', {
   setting,
-  view: {
-    path: setting.path.root + '/views/_home',
-    params: {
-      body: null
-    }
+  view: setting.path.root + '/views/_home',
+  params: {
+    body: null
   }
 }); %>
