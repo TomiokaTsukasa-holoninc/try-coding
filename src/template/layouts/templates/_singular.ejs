@@ -1,0 +1,16 @@
+<%- include(
+  setting.path.root + '/layouts/_header.ejs',
+  (view.params.header ?? null)
+); %>
+<%- include(
+  setting.path.root + '/layouts/_sidebar.ejs',
+  (view.params.header ?? null)
+); %>
+<%- include(
+  view.path, 
+  (view.params.body ?? null)
+); %>
+<%- include(
+  setting.path.root + '/layouts/_footer.ejs',
+  (view.params.footer ?? null)
+); %>
